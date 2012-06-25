@@ -5,11 +5,11 @@ json = {}
 
 torch.include('json', 'json.lua')
 
-function json.load(path)
+function json.load(...)
    local _, path = dok.unpack(
       {...},
       'json.load',
-      'Load a JSON file'
+      'Load a JSON file',
       {arg='path', type='string', help='path to file', req=true}
    )
    path = path:gsub('^~',os.getenv('HOME'))
@@ -24,7 +24,7 @@ function json.save(...)
    local _, path, tb = dok.unpack(
       {...},
       'json.save',
-      'Save a table to a JSON file'
+      'Save a table to a JSON file',
       {arg='path', type='string', help='path to file', req=true},
       {arg='table', type='table', help='table to save', req=true}
    )
