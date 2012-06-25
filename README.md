@@ -9,12 +9,17 @@ using torch-pkg:
 torch-pkg deploy
 ```
 
-## Use:
+## Usage:
 
-The library provides 2 high-level functions: json.load and json.save. To get help
-on these functions, simply do:
+This module exposes 4 functions:
 
-```
-> help(json.save)
-> help(json.load)
-```
+json_string = encode(o)
+  Returns the table / string / boolean / number / nil / json.null value as a JSON-encoded string.
+o = decode(json_string)
+  Returns a Lua object populated with the data encoded in the JSON string json_string.
+
+save(json_file, o)
+  Saves the table / string / boolean / number / nil / json.null value as a JSON-encoded file.
+o = load(json_file)
+  Returns a Lua object populated with the data encoded in the JSON file.
+
