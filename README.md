@@ -2,7 +2,7 @@
 
 TAKEN From JSON4Lua, originally written for Lua 5.1.
 
-Wrapped for Torch7 (torch-pkg) by Clement Farabet.
+Wrapped for Torch7 (torch-rocks).
 
 JSON4Lua: JSON encoding / decoding support for the Lua language.
 json Module.
@@ -18,7 +18,7 @@ First install Torch7 (www.torch.ch) then simply install this package
 using torch-pkg:
 
 ```
-torch-pkg deploy
+torch-rocks install json
 ```
 
 ## Usage:
