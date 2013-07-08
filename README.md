@@ -15,7 +15,7 @@ This module is released under the MIT License (MIT).
 ## Install:
 
 First install Torch7 (www.torch.ch) then simply install this package
-using torch-pkg:
+using torch-rocks:
 
 ```
 torch-rocks install json
