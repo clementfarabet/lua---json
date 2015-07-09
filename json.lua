@@ -332,7 +332,6 @@ end
 function encodeString(s)
   s = string.gsub(s,'\\','\\\\')
   s = string.gsub(s,'"','\\"')
-  s = string.gsub(s,"'","\\'")
   s = string.gsub(s,'\n','\\n')
   s = string.gsub(s,'\t','\\t')
   return s 
